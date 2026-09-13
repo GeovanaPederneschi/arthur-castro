@@ -32,7 +32,7 @@ export const siteConfig = {
 
   // Redes sociais (opcional — deixe "" para ocultar no rodapé)
   instagram: "",
-  linkedin: "",
+  linkedin: "https://www.linkedin.com/in/joao-arthur-mendes-castro/",
 
   // SEO
   keywords: [
