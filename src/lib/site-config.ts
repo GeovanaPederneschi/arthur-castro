@@ -7,7 +7,7 @@
 export const siteConfig = {
   // Identidade
   lawyerName: "Arthur Castro",
-  oab: "OAB/SP 000.000", // TODO: número real da OAB
+  oab: "OAB/SP 545.110", // TODO: número real da OAB
   brand: "Arthur Castro Advocacia Tributária",
   tagline: "Segurança jurídica para suas questões com o Fisco",
 
@@ -25,14 +25,14 @@ export const siteConfig = {
   serviceArea: "Atendimento em todo o Brasil (presencial em São Paulo/SP e 100% online para outras localidades)",
 
   // Contato
-  phoneDisplay: "(11) 90000-0000", // TODO: telefone real
-  phoneE164: "+5511900000000", // TODO: telefone real em formato E.164
-  whatsappNumber: "5511900000000", // TODO: número real (DDI+DDD+número, só dígitos)
-  email: "contato@arthurcastroadvocacia.com.br", // TODO: e-mail real
+  phoneDisplay: "(11) 96285-6873", // TODO: telefone real
+  phoneE164: "+5511962856873", // TODO: telefone real em formato E.164
+  whatsappNumber: "551196856873", // TODO: número real (DDI+DDD+número, só dígitos)
+  email: "jamc.08062000@gmail.com", // TODO: e-mail real
 
   // Redes sociais (opcional — deixe "" para ocultar no rodapé)
   instagram: "",
-  linkedin: "",
+  linkedin: "https://www.linkedin.com/in/joao-arthur-mendes-castro/",
 
   // SEO
   keywords: [
