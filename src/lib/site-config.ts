@@ -13,7 +13,7 @@ export const siteConfig = {
 
   // Domínio de produção (usado em metadata, sitemap, robots, JSON-LD)
   // TODO: trocar pelo domínio real depois de configurar na Vercel
-  url: "https://www.arthurcastroadvocacia.com.br",
+  url: "https://arthur-castro.vercel.app",
 
   // Localização (importante para SEO local — ajuste para a cidade real)
   city: "São Paulo",
