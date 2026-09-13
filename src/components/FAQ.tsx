@@ -2,7 +2,7 @@ const faqs = [
   {
     question: "O que faz um advogado tributarista?",
     answer:
-      "O advogado tributarista atua na prevenção e solução de questões relacionadas a tributos federais, estaduais e municipais. Isso inclui planejamento tributário, defesa em fiscalizações e autuações, recuperação de valores pagos indevidamente e negociação de dívidas com o Fisco.",
+      "O advogado tributarista atua na defesa de pessoas físicas e empresas diante de fiscalizações e autuações, na recuperação de valores pagos indevidamente e na negociação de dívidas com a Receita Federal, Estados e Municípios.",
   },
   {
     question: "Caí na malha fina do Imposto de Renda. O que devo fazer?",
@@ -20,9 +20,9 @@ const faqs = [
       "Sim. A depender do tributo e do órgão credor, existem programas de parcelamento ordinário e, eventualmente, programas especiais de transação tributária, que podem incluir descontos em multas e juros. Uma análise prévia ajuda a identificar a modalidade mais vantajosa para cada situação.",
   },
   {
-    question: "Empresas pequenas também precisam de planejamento tributário?",
+    question: "Nunca precisei de um advogado tributário. Por onde eu começo?",
     answer:
-      "Sim. A escolha do regime tributário (Simples Nacional, Lucro Presumido ou Lucro Real) e a forma como as operações são estruturadas têm impacto direto na carga tributária, independentemente do porte da empresa. O planejamento ajuda a evitar tanto o pagamento a maior de tributos quanto riscos fiscais por enquadramento incorreto.",
+      "Basta reunir os documentos que você recebeu (notificação, guia, extrato ou comunicado) e entrar em contato pelo WhatsApp ou pelo formulário. Não é preciso entender os termos técnicos antes — a explicação sobre o que está acontecendo e o que pode ser feito é parte da própria consulta.",
   },
   {
     question: "Como funciona uma consulta inicial?",

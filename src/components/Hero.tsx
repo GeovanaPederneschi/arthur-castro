@@ -8,16 +8,16 @@ export default function Hero() {
         <p className="eyebrow">Direito Tributário</p>
 
         <h1 className="mt-5 font-serif text-4xl leading-tight text-[var(--color-ink)] sm:text-5xl">
-          Advogado tributarista para proteger você e sua empresa das exigências
-          do Fisco
+          Advocacia Tributária
         </h1>
 
         <div className="mx-auto mt-6 h-px w-16 bg-[var(--color-brass)]" />
 
         <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-[var(--color-ink-soft)]">
-          Planejamento tributário, defesa em autuações fiscais, recuperação de
-          créditos e negociação de dívidas com a Receita Federal, Estados e
-          Municípios. Atendimento claro, direto e orientado à sua realidade.
+          Se você recebeu uma notificação da Receita Federal, está com dívidas
+          tributárias ou não sabe por onde começar, aqui você recebe
+          explicações claras, sem termos técnicos difíceis, sobre o que fazer
+          a seguir.
         </p>
 
         <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">

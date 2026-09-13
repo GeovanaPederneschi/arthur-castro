@@ -76,10 +76,10 @@ export default function ContactSection() {
             <div>
               <label htmlFor="topic" className="eyebrow">Assunto</label>
               <select id="topic" name="topic" className={`${inputClasses} bg-[var(--color-paper)]`}>
-                <option>Planejamento Tributário</option>
                 <option>Defesa em Autuação Fiscal</option>
                 <option>Recuperação de Créditos</option>
                 <option>Parcelamento de Dívidas</option>
+                <option>Consultoria Tributária Empresarial</option>
                 <option>Imposto de Renda / Malha Fina</option>
                 <option>Outro assunto</option>
               </select>

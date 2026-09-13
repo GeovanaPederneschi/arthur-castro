@@ -33,9 +33,12 @@ export default function WhatsAppButton({
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Falar no WhatsApp"
-        className="fixed bottom-5 right-5 z-50 flex h-12 w-12 items-center justify-center rounded-full bg-[var(--color-ink)] text-[#25D366] shadow-md transition-transform hover:scale-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-ink)]"
+        className="group fixed bottom-6 right-6 z-50 flex items-center gap-2.5 overflow-hidden border border-[var(--color-ink)] bg-[var(--color-paper)] py-3 pl-3 pr-3 text-[var(--color-ink)] shadow-[0_2px_10px_rgba(28,27,25,0.08)] transition-colors hover:bg-[var(--color-ink)] hover:text-[var(--color-paper)] focus-visible:outline focus-visible:outline-1 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-ink)]"
       >
-        <WhatsAppIcon className="h-5 w-5" />
+        <WhatsAppIcon className="h-[18px] w-[18px] shrink-0" />
+        <span className="max-w-0 overflow-hidden whitespace-nowrap text-sm font-medium tracking-wide opacity-0 transition-all duration-300 group-hover:max-w-[140px] group-hover:pr-1 group-hover:opacity-100">
+          Fale comigo
+        </span>
       </a>
     );
   }
