@@ -1,17 +1,17 @@
 @import "tailwindcss";
 
 :root {
-  --background: #fffffe;
+  --background: #ede3cf;
   --foreground: #1c1b19;
 
-  /* Paleta clássica e minimalista: marfim + tinta + um único acento em bronze */
-  --color-paper: #fffffe;
-  --color-paper-tint: #f6f3ec;
+  /* Paleta clássica e minimalista: bege + tinta + um único acento em bronze */
+  --color-paper: #ede3cf;
+  --color-paper-tint: #e0d3b6;
   --color-ink: #1c1b19;
-  --color-ink-soft: #55524a;
-  --color-ink-faint: #8b8579;
-  --color-line: #e2ddd0;
-  --color-charcoal: #201f1c;
+  --color-ink-soft: #4c4638;
+  --color-ink-faint: #7d735c;
+  --color-line: #cbba93;
+  --color-charcoal: #23201a;
   --color-brass: #8a6a34;
   --color-brass-soft: #b79a5c;
 }
