@@ -28,14 +28,14 @@ export default function WhyUs() {
   return (
     <section id="sobre" className="bg-[var(--color-paper-tint)] py-20 sm:py-28">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
-        <div className="grid gap-12 md:grid-cols-[280px_1fr] md:gap-16">
-          <div>
-            <div className="relative aspect-[4/5] w-full max-w-[280px] overflow-hidden border border-[var(--color-line)]">
+        <div className="grid gap-12 md:grid-cols-[220px_1fr] md:gap-16">
+          <div className="flex flex-col items-center text-center md:items-start md:text-left">
+            <div className="relative h-40 w-40 shrink-0 overflow-hidden rounded-full border border-[var(--color-line)] sm:h-48 sm:w-48">
               <Image
                 src="/images/arthur-castro.jpg"
                 alt={`${siteConfig.lawyerName}, advogado tributarista`}
                 fill
-                sizes="280px"
+                sizes="192px"
                 className="object-cover"
                 priority
               />
