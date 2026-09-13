@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #101828;
+
+  /* Paleta institucional: azul-marinho (confiança/seriedade) + dourado (prestígio) */
+  --color-navy-950: #0a1a33;
+  --color-navy-900: #0b2545;
+  --color-navy-800: #123267;
+  --color-navy-700: #1a4480;
+  --color-gold-500: #c9a227;
+  --color-gold-400: #d9b94a;
+  --color-gold-100: #f6ecd0;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-source-serif);
+
+  --color-navy-950: var(--color-navy-950);
+  --color-navy-900: var(--color-navy-900);
+  --color-navy-800: var(--color-navy-800);
+  --color-navy-700: var(--color-navy-700);
+  --color-gold-500: var(--color-gold-500);
+  --color-gold-400: var(--color-gold-400);
+  --color-gold-100: var(--color-gold-100);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), Arial, Helvetica, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.prose-article h2 {
+  font-family: var(--font-source-serif), Georgia, serif;
+  color: var(--color-navy-900);
+}
