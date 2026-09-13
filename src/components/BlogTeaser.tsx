@@ -10,7 +10,7 @@ export default function BlogTeaser() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="flex flex-wrap items-end justify-between gap-4 border-b border-[var(--color-line)] pb-8">
           <div className="max-w-2xl">
-            <p className="eyebrow">Blog</p>
+            <p className="eyebrow">Atualizações Tributárias</p>
             <h2 className="mt-3 font-serif text-3xl text-[var(--color-ink)] sm:text-4xl">
               Conteúdo sobre Direito Tributário
             </h2>

@@ -41,7 +41,7 @@ export default function WhyUs() {
               />
             </div>
             <p className="mt-4 font-serif text-lg text-[var(--color-ink)]">
-              {siteConfig.lawyerName}
+              {siteConfig.fullLegalName}
             </p>
             <p className="text-sm text-[var(--color-ink-faint)]">{siteConfig.oab}</p>
           </div>
@@ -49,7 +49,7 @@ export default function WhyUs() {
           <div>
             <p className="eyebrow">Sobre o escritório</p>
             <h2 className="mt-3 font-serif text-3xl text-[var(--color-ink)] sm:text-4xl">
-              {siteConfig.lawyerName}
+              {siteConfig.fullLegalName}
             </h2>
             <p className="mt-5 text-[var(--color-ink-soft)] leading-relaxed">
               Escritório dedicado ao Direito Tributário, com atuação voltada a

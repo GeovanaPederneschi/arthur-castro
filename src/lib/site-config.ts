@@ -7,6 +7,7 @@
 export const siteConfig = {
   // Identidade
   lawyerName: "Arthur Castro",
+  fullLegalName: "João Arthur Mendes Castro",
   oab: "OAB/SP 545.110",
   brand: "Arthur Castro Advocacia Tributária",
   tagline: "Segurança jurídica para suas questões com o Fisco",

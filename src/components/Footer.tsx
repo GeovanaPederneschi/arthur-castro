@@ -26,7 +26,7 @@ export default function Footer() {
             <li><Link href="/#servicos" className="hover:text-[var(--color-paper)]">Serviços</Link></li>
             <li><Link href="/#sobre" className="hover:text-[var(--color-paper)]">Sobre</Link></li>
             <li><Link href="/#faq" className="hover:text-[var(--color-paper)]">Dúvidas Frequentes</Link></li>
-            <li><Link href="/blog" className="hover:text-[var(--color-paper)]">Blog</Link></li>
+            <li><Link href="/blog" className="hover:text-[var(--color-paper)]">Atualizações Tributárias</Link></li>
             <li><Link href="/#contato" className="hover:text-[var(--color-paper)]">Contato</Link></li>
           </ul>
         </div>

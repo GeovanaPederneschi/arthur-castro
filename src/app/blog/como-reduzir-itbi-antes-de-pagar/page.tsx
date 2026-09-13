@@ -39,7 +39,7 @@ export default function BlogPostPage() {
     "@type": "BreadcrumbList",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "Início", item: siteConfig.url },
-      { "@type": "ListItem", position: 2, name: "Blog", item: `${siteConfig.url}/blog` },
+      { "@type": "ListItem", position: 2, name: "Atualizações Tributárias", item: `${siteConfig.url}/blog` },
       { "@type": "ListItem", position: 3, name: post.title, item: `${siteConfig.url}/blog/${post.slug}` },
     ],
   };
@@ -52,7 +52,7 @@ export default function BlogPostPage() {
       <nav aria-label="breadcrumb" className="text-sm text-[var(--color-ink-faint)]">
         <Link href="/" className="hover:underline">Início</Link>
         <span className="mx-2">/</span>
-        <Link href="/blog" className="hover:underline">Blog</Link>
+        <Link href="/blog" className="hover:underline">Atualizações Tributárias</Link>
         <span className="mx-2">/</span>
         <span className="text-[var(--color-ink-soft)]">{post.title}</span>
       </nav>
@@ -134,7 +134,7 @@ export default function BlogPostPage() {
           conforme a legislação do município onde o imóvel está localizado.
         </p>
         <Link href="/blog" className="mt-4 inline-block text-[var(--color-ink)] hover:text-[var(--color-brass)] hover:underline">
-          ← Voltar para o blog
+          ← Voltar para Atualizações Tributárias
         </Link>
       </footer>
     </article>

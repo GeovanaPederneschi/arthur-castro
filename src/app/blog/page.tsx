@@ -4,7 +4,7 @@ import { posts } from "@/lib/blog-data";
 import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = {
-  title: "Blog Jurídico Tributário",
+  title: "Atualizações Tributárias",
   description:
     `Artigos sobre Direito Tributário escritos por ${siteConfig.lawyerName}: ITBI, execução fiscal, isenção de Imposto de Renda, ` +
     "Reforma Tributária, malha fina e mais.",
@@ -18,9 +18,9 @@ export default function BlogIndexPage() {
 
   return (
     <section className="mx-auto max-w-3xl px-4 py-20 sm:px-6 sm:py-28">
-      <p className="eyebrow">Blog</p>
+      <p className="eyebrow">Atualizações Tributárias</p>
       <h1 className="mt-3 font-serif text-4xl text-[var(--color-ink)] sm:text-5xl">
-        Blog Jurídico Tributário
+        Atualizações Tributárias
       </h1>
       <p className="mt-5 max-w-2xl text-[var(--color-ink-soft)] leading-relaxed">
         Artigos com explicações claras sobre os principais temas de Direito
