@@ -13,12 +13,10 @@ export default function Icon() {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          background: "#0b2545",
-          borderRadius: "50%",
-          color: "#d9b94a",
-          fontFamily: "sans-serif",
-          fontSize: 32,
-          fontWeight: 700,
+          background: "#1c1b19",
+          color: "#fffffe",
+          fontFamily: "serif",
+          fontSize: 30,
         }}
       >
         AC

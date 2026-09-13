@@ -23,8 +23,8 @@ export const metadata: Metadata = {
 
 function CTA({ text }: { text: string }) {
   return (
-    <div className="not-prose my-10 rounded-xl border border-[var(--color-gold-500)]/40 bg-[var(--color-gold-100)] p-6">
-      <p className="font-serif text-lg font-semibold text-[var(--color-navy-900)]">
+    <div className="not-prose my-10 border border-[var(--color-line)] bg-[var(--color-paper-tint)] p-6">
+      <p className="font-serif text-lg text-[var(--color-ink)]">
         {text}
       </p>
       <div className="mt-4 flex flex-col gap-3 sm:flex-row">
@@ -34,7 +34,7 @@ function CTA({ text }: { text: string }) {
         />
         <Link
           href="/#contato"
-          className="inline-flex items-center justify-center rounded-md border border-[var(--color-navy-900)] px-6 py-3 text-sm font-semibold text-[var(--color-navy-900)] transition-colors hover:bg-[var(--color-navy-900)] hover:text-white"
+          className="inline-flex items-center justify-center border border-[var(--color-ink)] px-6 py-3 text-sm font-medium text-[var(--color-ink)] transition-colors hover:bg-[var(--color-ink)] hover:text-[var(--color-paper)]"
         >
           Preencher formulário de contato
         </Link>
@@ -88,24 +88,24 @@ export default function BlogPostPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
 
-      <nav aria-label="breadcrumb" className="text-sm text-slate-500">
+      <nav aria-label="breadcrumb" className="text-sm text-[var(--color-ink-faint)]">
         <Link href="/" className="hover:underline">Início</Link>
         <span className="mx-2">/</span>
         <Link href="/blog" className="hover:underline">Blog</Link>
         <span className="mx-2">/</span>
-        <span className="text-slate-700">{post.title}</span>
+        <span className="text-[var(--color-ink-soft)]">{post.title}</span>
       </nav>
 
-      <header className="mt-6">
-        <p className="text-sm font-semibold uppercase tracking-wide text-[var(--color-gold-500)]">
+      <header className="mt-6 border-b border-[var(--color-line)] pb-8">
+        <p className="eyebrow">
           {post.category}
         </p>
-        <h1 className="mt-2 font-serif text-3xl font-semibold leading-tight text-[var(--color-navy-900)] sm:text-4xl">
+        <h1 className="mt-3 font-serif text-3xl leading-tight text-[var(--color-ink)] sm:text-4xl">
           {post.title}
         </h1>
-        <div className="mt-4 flex flex-wrap items-center gap-3 text-sm text-slate-500">
+        <div className="mt-4 flex flex-wrap items-center gap-3 text-sm text-[var(--color-ink-faint)]">
           <span>Por {siteConfig.lawyerName}</span>
-          <span>•</span>
+          <span>·</span>
           <time dateTime={post.date}>
             {new Date(post.date).toLocaleDateString("pt-BR", {
               day: "2-digit",
@@ -113,12 +113,12 @@ export default function BlogPostPage() {
               year: "numeric",
             })}
           </time>
-          <span>•</span>
+          <span>·</span>
           <span>{post.readingTime}</span>
         </div>
       </header>
 
-      <div className="prose-article mt-10 max-w-none space-y-6 text-slate-700 [&_h2]:mt-10 [&_h2]:text-2xl [&_h2]:font-semibold [&_h3]:mt-6 [&_h3]:text-lg [&_h3]:font-semibold [&_h3]:text-[var(--color-navy-900)] [&_p]:leading-relaxed [&_ul]:list-disc [&_ul]:pl-6 [&_ul]:space-y-1">
+      <div className="prose-article mt-10 max-w-none space-y-6 text-[var(--color-ink-soft)] [&_h2]:mt-10 [&_h2]:font-serif [&_h2]:text-2xl [&_h3]:mt-6 [&_h3]:text-lg [&_h3]:font-semibold [&_h3]:text-[var(--color-ink)] [&_p]:leading-relaxed [&_ul]:list-disc [&_ul]:pl-6 [&_ul]:space-y-1">
         <p>
           Lidar com tributos é uma das partes mais estressantes da vida
           financeira de pessoas físicas e empresas no Brasil. Entre prazos,
@@ -268,14 +268,14 @@ export default function BlogPostPage() {
         <CTA text="Quer entender melhor a sua situação tributária? Fale agora e receba uma orientação inicial sobre o seu caso." />
       </div>
 
-      <footer className="mt-12 border-t border-slate-200 pt-6 text-sm text-slate-500">
+      <footer className="mt-12 border-t border-[var(--color-line)] pt-6 text-sm text-[var(--color-ink-faint)]">
         <p>
           Este artigo tem caráter informativo e não substitui uma análise
           jurídica individualizada. Cada caso tributário possui
           particularidades que podem alterar significativamente a estratégia
           recomendada.
         </p>
-        <Link href="/blog" className="mt-4 inline-block font-semibold text-[var(--color-navy-900)] hover:underline">
+        <Link href="/blog" className="mt-4 inline-block text-[var(--color-ink)] hover:text-[var(--color-brass)] hover:underline">
           ← Voltar para o blog
         </Link>
       </footer>

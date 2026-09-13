@@ -25,36 +25,34 @@ const points = [
 
 export default function WhyUs() {
   return (
-    <section id="sobre" className="bg-slate-50 py-16 sm:py-24">
-      <div className="mx-auto grid max-w-6xl gap-10 px-4 sm:px-6 md:grid-cols-2 md:gap-16">
+    <section id="sobre" className="bg-[var(--color-paper-tint)] py-20 sm:py-28">
+      <div className="mx-auto grid max-w-6xl gap-12 px-4 sm:px-6 md:grid-cols-2 md:gap-20">
         <div>
-          <p className="text-sm font-semibold uppercase tracking-wide text-[var(--color-gold-500)]">
-            Sobre o escritório
-          </p>
-          <h2 className="mt-2 font-serif text-2xl font-semibold text-[var(--color-navy-900)] sm:text-3xl">
+          <p className="eyebrow">Sobre o escritório</p>
+          <h2 className="mt-3 font-serif text-3xl text-[var(--color-ink)] sm:text-4xl">
             {siteConfig.lawyerName}
           </h2>
-          <p className="mt-4 text-slate-600">
+          <p className="mt-5 text-[var(--color-ink-soft)] leading-relaxed">
             Escritório dedicado ao Direito Tributário, com atuação voltada a
             pessoas físicas e empresas que enfrentam desafios com a Receita
             Federal, Estados e Municípios — desde o planejamento preventivo até
             a defesa em processos fiscais.
           </p>
-          <p className="mt-4 text-slate-600">
+          <p className="mt-4 text-[var(--color-ink-soft)] leading-relaxed">
             O objetivo é oferecer orientação jurídica objetiva, com foco em
             reduzir riscos, evitar passivos desnecessários e dar previsibilidade
             às decisões tributárias do dia a dia.
           </p>
-          <p className="mt-4 text-sm text-slate-500">{siteConfig.oab}</p>
+          <p className="mt-6 text-sm text-[var(--color-ink-faint)]">{siteConfig.oab}</p>
         </div>
 
-        <div className="grid gap-4 sm:grid-cols-2">
+        <div className="divide-y divide-[var(--color-line)] border-t border-[var(--color-line)] md:border-t-0">
           {points.map((point) => (
-            <div key={point.title} className="rounded-xl bg-white p-5 shadow-sm">
-              <h3 className="font-semibold text-[var(--color-navy-900)]">
+            <div key={point.title} className="py-5 first:pt-0 md:first:pt-0">
+              <h3 className="font-serif text-base text-[var(--color-ink)]">
                 {point.title}
               </h3>
-              <p className="mt-2 text-sm text-slate-600">{point.description}</p>
+              <p className="mt-1.5 text-sm text-[var(--color-ink-soft)]">{point.description}</p>
             </div>
           ))}
         </div>

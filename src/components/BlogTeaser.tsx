@@ -3,39 +3,40 @@ import { posts } from "@/lib/blog-data";
 
 export default function BlogTeaser() {
   return (
-    <section className="bg-white py-16 sm:py-24">
+    <section className="bg-[var(--color-paper)] py-20 sm:py-28">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
-        <div className="flex flex-wrap items-end justify-between gap-4">
+        <div className="flex flex-wrap items-end justify-between gap-4 border-b border-[var(--color-line)] pb-8">
           <div className="max-w-2xl">
-            <p className="text-sm font-semibold uppercase tracking-wide text-[var(--color-gold-500)]">
-              Blog
-            </p>
-            <h2 className="mt-2 font-serif text-2xl font-semibold text-[var(--color-navy-900)] sm:text-3xl">
+            <p className="eyebrow">Blog</p>
+            <h2 className="mt-3 font-serif text-3xl text-[var(--color-ink)] sm:text-4xl">
               Conteúdo sobre Direito Tributário
             </h2>
           </div>
           <Link
             href="/blog"
-            className="text-sm font-semibold text-[var(--color-navy-900)] hover:underline"
+            className="text-sm text-[var(--color-ink)] underline decoration-[var(--color-line)] underline-offset-4 hover:decoration-[var(--color-ink)]"
           >
             Ver todos os artigos →
           </Link>
         </div>
 
-        <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-2 divide-y divide-[var(--color-line)]">
           {posts.map((post) => (
             <Link
               key={post.slug}
               href={`/blog/${post.slug}`}
-              className="group rounded-xl border border-slate-200 p-6 transition-shadow hover:shadow-md"
+              className="group block py-8 sm:flex sm:items-start sm:justify-between sm:gap-10"
             >
-              <p className="text-xs font-medium uppercase tracking-wide text-[var(--color-gold-500)]">
-                {post.category}
-              </p>
-              <h3 className="mt-2 font-serif text-lg font-semibold text-[var(--color-navy-900)] group-hover:underline">
-                {post.title}
-              </h3>
-              <p className="mt-2 text-sm text-slate-600">{post.excerpt}</p>
+              <div>
+                <p className="eyebrow">{post.category}</p>
+                <h3 className="mt-2 font-serif text-xl text-[var(--color-ink)] group-hover:text-[var(--color-brass)]">
+                  {post.title}
+                </h3>
+                <p className="mt-2 max-w-2xl text-sm text-[var(--color-ink-soft)]">{post.excerpt}</p>
+              </div>
+              <span className="mt-4 hidden shrink-0 text-sm text-[var(--color-ink-faint)] sm:mt-1 sm:block">
+                Ler →
+              </span>
             </Link>
           ))}
         </div>

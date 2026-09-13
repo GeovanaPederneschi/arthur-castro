@@ -1,17 +1,19 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #101828;
+  --background: #fffffe;
+  --foreground: #1c1b19;
 
-  /* Paleta institucional: azul-marinho (confiança/seriedade) + dourado (prestígio) */
-  --color-navy-950: #0a1a33;
-  --color-navy-900: #0b2545;
-  --color-navy-800: #123267;
-  --color-navy-700: #1a4480;
-  --color-gold-500: #c9a227;
-  --color-gold-400: #d9b94a;
-  --color-gold-100: #f6ecd0;
+  /* Paleta clássica e minimalista: marfim + tinta + um único acento em bronze */
+  --color-paper: #fffffe;
+  --color-paper-tint: #f6f3ec;
+  --color-ink: #1c1b19;
+  --color-ink-soft: #55524a;
+  --color-ink-faint: #8b8579;
+  --color-line: #e2ddd0;
+  --color-charcoal: #201f1c;
+  --color-brass: #8a6a34;
+  --color-brass-soft: #b79a5c;
 }
 
 @theme inline {
@@ -20,13 +22,15 @@
   --font-sans: var(--font-inter);
   --font-serif: var(--font-source-serif);
 
-  --color-navy-950: var(--color-navy-950);
-  --color-navy-900: var(--color-navy-900);
-  --color-navy-800: var(--color-navy-800);
-  --color-navy-700: var(--color-navy-700);
-  --color-gold-500: var(--color-gold-500);
-  --color-gold-400: var(--color-gold-400);
-  --color-gold-100: var(--color-gold-100);
+  --color-paper: var(--color-paper);
+  --color-paper-tint: var(--color-paper-tint);
+  --color-ink: var(--color-ink);
+  --color-ink-soft: var(--color-ink-soft);
+  --color-ink-faint: var(--color-ink-faint);
+  --color-line: var(--color-line);
+  --color-charcoal: var(--color-charcoal);
+  --color-brass: var(--color-brass);
+  --color-brass-soft: var(--color-brass-soft);
 }
 
 body {
@@ -41,5 +45,13 @@ html {
 
 .prose-article h2 {
   font-family: var(--font-source-serif), Georgia, serif;
-  color: var(--color-navy-900);
+  color: var(--color-ink);
+}
+
+.eyebrow {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-brass);
 }

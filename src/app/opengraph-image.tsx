@@ -15,26 +15,28 @@ export default async function Image() {
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
-          padding: "80px",
-          background: "#0b2545",
-          color: "white",
-          fontFamily: "sans-serif",
+          padding: "90px",
+          background: "#fffffe",
+          color: "#1c1b19",
+          fontFamily: "serif",
         }}
       >
         <div
           style={{
-            fontSize: 28,
-            letterSpacing: 4,
+            fontSize: 24,
+            letterSpacing: 6,
             textTransform: "uppercase",
-            color: "#d9b94a",
+            color: "#8a6a34",
+            fontFamily: "sans-serif",
           }}
         >
           Advocacia Tributária
         </div>
-        <div style={{ fontSize: 68, fontWeight: 700, marginTop: 24, maxWidth: 900 }}>
+        <div style={{ width: 64, height: 2, background: "#8a6a34", marginTop: 28 }} />
+        <div style={{ fontSize: 66, marginTop: 28, maxWidth: 900 }}>
           {siteConfig.lawyerName}
         </div>
-        <div style={{ fontSize: 32, marginTop: 20, color: "#cbd5e1", maxWidth: 900 }}>
+        <div style={{ fontSize: 30, marginTop: 20, color: "#55524a", maxWidth: 820, fontFamily: "sans-serif" }}>
           {siteConfig.tagline}
         </div>
       </div>

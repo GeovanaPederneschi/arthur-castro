@@ -23,27 +23,25 @@ const steps = [
 
 export default function Process() {
   return (
-    <section className="bg-white py-16 sm:py-24">
+    <section className="bg-[var(--color-paper)] py-20 sm:py-28">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="max-w-2xl">
-          <p className="text-sm font-semibold uppercase tracking-wide text-[var(--color-gold-500)]">
-            Como funciona
-          </p>
-          <h2 className="mt-2 font-serif text-2xl font-semibold text-[var(--color-navy-900)] sm:text-3xl">
+          <p className="eyebrow">Como funciona</p>
+          <h2 className="mt-3 font-serif text-3xl text-[var(--color-ink)] sm:text-4xl">
             Um processo simples, do primeiro contato à solução
           </h2>
         </div>
 
-        <div className="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-14 grid gap-10 border-t border-[var(--color-line)] pt-10 sm:grid-cols-2 lg:grid-cols-4">
           {steps.map((step) => (
-            <div key={step.number} className="relative pl-12">
-              <span className="absolute left-0 top-0 font-serif text-3xl font-semibold text-[var(--color-gold-500)]">
+            <div key={step.number}>
+              <span className="font-serif text-3xl text-[var(--color-brass)]">
                 {step.number}
               </span>
-              <h3 className="font-semibold text-[var(--color-navy-900)]">
+              <h3 className="mt-3 font-serif text-lg text-[var(--color-ink)]">
                 {step.title}
               </h3>
-              <p className="mt-2 text-sm text-slate-600">{step.description}</p>
+              <p className="mt-2 text-sm text-[var(--color-ink-soft)]">{step.description}</p>
             </div>
           ))}
         </div>

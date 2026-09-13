@@ -17,11 +17,13 @@ export default function WhatsAppButton({
   message,
   label = "Fale no WhatsApp",
   floating = false,
+  variant = "dark",
   className = "",
 }: {
   message: string;
   label?: string;
   floating?: boolean;
+  variant?: "dark" | "outline";
   className?: string;
 }) {
   if (floating) {
@@ -31,24 +33,26 @@ export default function WhatsAppButton({
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Falar no WhatsApp"
-        className="fixed bottom-5 right-5 z-50 flex items-center gap-2 rounded-full bg-[#25D366] px-4 py-3 text-white shadow-lg shadow-black/20 transition-transform hover:scale-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#25D366] md:px-5"
+        className="fixed bottom-5 right-5 z-50 flex h-12 w-12 items-center justify-center rounded-full bg-[var(--color-ink)] text-[#25D366] shadow-md transition-transform hover:scale-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-ink)]"
       >
-        <WhatsAppIcon className="h-6 w-6 shrink-0" />
-        <span className="hidden text-sm font-semibold md:inline">
-          Fale no WhatsApp
-        </span>
+        <WhatsAppIcon className="h-5 w-5" />
       </a>
     );
   }
+
+  const styles =
+    variant === "outline"
+      ? "border border-[var(--color-ink)] text-[var(--color-ink)] hover:bg-[var(--color-ink)] hover:text-[var(--color-paper)]"
+      : "bg-[var(--color-ink)] text-[var(--color-paper)] hover:bg-[var(--color-charcoal)]";
 
   return (
     <a
       href={whatsappLink(message)}
       target="_blank"
       rel="noopener noreferrer"
-      className={`inline-flex items-center justify-center gap-2 rounded-md bg-[#25D366] px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-[#1ebe5b] ${className}`}
+      className={`inline-flex items-center justify-center gap-2 px-6 py-3 text-sm font-medium transition-colors ${styles} ${className}`}
     >
-      <WhatsAppIcon className="h-5 w-5" />
+      <WhatsAppIcon className="h-4 w-4 text-[#25D366]" />
       {label}
     </a>
   );

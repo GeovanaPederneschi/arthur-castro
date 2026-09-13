@@ -46,27 +46,25 @@ export default function FAQ() {
   };
 
   return (
-    <section id="faq" className="bg-slate-50 py-16 sm:py-24">
-      <div className="mx-auto max-w-4xl px-4 sm:px-6">
+    <section id="faq" className="bg-[var(--color-paper-tint)] py-20 sm:py-28">
+      <div className="mx-auto max-w-3xl px-4 sm:px-6">
         <div className="max-w-2xl">
-          <p className="text-sm font-semibold uppercase tracking-wide text-[var(--color-gold-500)]">
-            Dúvidas Frequentes
-          </p>
-          <h2 className="mt-2 font-serif text-2xl font-semibold text-[var(--color-navy-900)] sm:text-3xl">
+          <p className="eyebrow">Dúvidas Frequentes</p>
+          <h2 className="mt-3 font-serif text-3xl text-[var(--color-ink)] sm:text-4xl">
             Perguntas comuns sobre Direito Tributário
           </h2>
         </div>
 
-        <div className="mt-8 divide-y divide-slate-200 rounded-xl border border-slate-200 bg-white">
+        <div className="mt-10 divide-y divide-[var(--color-line)] border-y border-[var(--color-line)]">
           {faqs.map((faq) => (
-            <details key={faq.question} className="group p-5 open:bg-slate-50">
-              <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-semibold text-[var(--color-navy-900)]">
+            <details key={faq.question} className="group py-5">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-serif text-base text-[var(--color-ink)]">
                 {faq.question}
-                <span className="shrink-0 text-[var(--color-gold-500)] transition-transform group-open:rotate-45">
+                <span className="shrink-0 font-sans text-lg text-[var(--color-brass)] transition-transform group-open:rotate-45">
                   +
                 </span>
               </summary>
-              <p className="mt-3 text-sm leading-relaxed text-slate-600">
+              <p className="mt-3 max-w-2xl text-sm leading-relaxed text-[var(--color-ink-soft)]">
                 {faq.answer}
               </p>
             </details>

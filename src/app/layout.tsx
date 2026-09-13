@@ -95,7 +95,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="pt-BR"
       className={`${inter.variable} ${sourceSerif.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-white text-[var(--foreground)]">
+      <body className="min-h-full flex flex-col bg-[var(--color-paper)] text-[var(--foreground)]">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(legalServiceJsonLd) }}

@@ -15,31 +15,23 @@ export const metadata: Metadata = {
 
 export default function BlogIndexPage() {
   return (
-    <section className="mx-auto max-w-4xl px-4 py-16 sm:px-6 sm:py-24">
-      <p className="text-sm font-semibold uppercase tracking-wide text-[var(--color-gold-500)]">
-        Blog
-      </p>
-      <h1 className="mt-2 font-serif text-3xl font-semibold text-[var(--color-navy-900)] sm:text-4xl">
+    <section className="mx-auto max-w-3xl px-4 py-20 sm:px-6 sm:py-28">
+      <p className="eyebrow">Blog</p>
+      <h1 className="mt-3 font-serif text-4xl text-[var(--color-ink)] sm:text-5xl">
         Blog Jurídico Tributário
       </h1>
-      <p className="mt-4 max-w-2xl text-slate-600">
+      <p className="mt-5 max-w-2xl text-[var(--color-ink-soft)] leading-relaxed">
         Artigos com explicações claras sobre os principais temas de Direito
         Tributário, para ajudar você a entender seus direitos e obrigações
         diante do Fisco.
       </p>
 
-      <div className="mt-10 space-y-6">
+      <div className="mt-14 divide-y divide-[var(--color-line)] border-t border-[var(--color-line)]">
         {posts.map((post) => (
-          <Link
-            key={post.slug}
-            href={`/blog/${post.slug}`}
-            className="group block rounded-xl border border-slate-200 p-6 transition-shadow hover:shadow-md"
-          >
-            <div className="flex flex-wrap items-center gap-3 text-xs text-slate-500">
-              <span className="font-medium uppercase tracking-wide text-[var(--color-gold-500)]">
-                {post.category}
-              </span>
-              <span>•</span>
+          <Link key={post.slug} href={`/blog/${post.slug}`} className="group block py-8">
+            <div className="flex flex-wrap items-center gap-3 text-xs text-[var(--color-ink-faint)]">
+              <span className="eyebrow">{post.category}</span>
+              <span>·</span>
               <time dateTime={post.date}>
                 {new Date(post.date).toLocaleDateString("pt-BR", {
                   day: "2-digit",
@@ -47,13 +39,13 @@ export default function BlogIndexPage() {
                   year: "numeric",
                 })}
               </time>
-              <span>•</span>
+              <span>·</span>
               <span>{post.readingTime}</span>
             </div>
-            <h2 className="mt-3 font-serif text-xl font-semibold text-[var(--color-navy-900)] group-hover:underline">
+            <h2 className="mt-3 font-serif text-2xl text-[var(--color-ink)] group-hover:text-[var(--color-brass)]">
               {post.title}
             </h2>
-            <p className="mt-2 text-sm text-slate-600">{post.excerpt}</p>
+            <p className="mt-2 text-sm text-[var(--color-ink-soft)]">{post.excerpt}</p>
           </Link>
         ))}
       </div>

@@ -3,6 +3,9 @@
 import { FormEvent, useState } from "react";
 import { siteConfig, whatsappLink } from "@/lib/site-config";
 
+const inputClasses =
+  "mt-1 w-full border-0 border-b border-[var(--color-line)] bg-transparent px-0 py-2 text-sm text-[var(--color-ink)] focus:border-[var(--color-ink)] focus:outline-none";
+
 export default function ContactSection() {
   const [submitted, setSubmitted] = useState(false);
 
@@ -25,81 +28,54 @@ export default function ContactSection() {
   }
 
   return (
-    <section id="contato" className="bg-[var(--color-navy-900)] py-16 text-white sm:py-24">
-      <div className="mx-auto grid max-w-6xl gap-10 px-4 sm:px-6 md:grid-cols-2 md:gap-16">
+    <section id="contato" className="bg-[var(--color-paper)] py-20 sm:py-28">
+      <div className="mx-auto grid max-w-6xl gap-12 px-4 sm:px-6 md:grid-cols-2 md:gap-20">
         <div>
-          <p className="text-sm font-semibold uppercase tracking-wide text-[var(--color-gold-400)]">
-            Fale comigo
-          </p>
-          <h2 className="mt-2 font-serif text-2xl font-semibold sm:text-3xl">
+          <p className="eyebrow">Fale comigo</p>
+          <h2 className="mt-3 font-serif text-3xl text-[var(--color-ink)] sm:text-4xl">
             Vamos conversar sobre o seu caso
           </h2>
-          <p className="mt-4 text-slate-300">
+          <p className="mt-5 text-[var(--color-ink-soft)] leading-relaxed">
             Preencha o formulário ao lado ou entre em contato diretamente pelos
             canais abaixo. O envio do formulário abre uma conversa no WhatsApp
             com sua mensagem já preenchida.
           </p>
 
-          <ul className="mt-8 space-y-4 text-sm">
+          <ul className="mt-10 space-y-4 border-t border-[var(--color-line)] pt-6 text-sm">
             <li className="flex items-center gap-3">
-              <span className="text-[var(--color-gold-400)]">Telefone</span>
-              <a href={`tel:${siteConfig.phoneE164}`} className="hover:underline">
+              <span className="eyebrow w-24 shrink-0">Telefone</span>
+              <a href={`tel:${siteConfig.phoneE164}`} className="text-[var(--color-ink)] hover:text-[var(--color-brass)]">
                 {siteConfig.phoneDisplay}
               </a>
             </li>
             <li className="flex items-center gap-3">
-              <span className="text-[var(--color-gold-400)]">E-mail</span>
-              <a href={`mailto:${siteConfig.email}`} className="hover:underline">
+              <span className="eyebrow w-24 shrink-0">E-mail</span>
+              <a href={`mailto:${siteConfig.email}`} className="text-[var(--color-ink)] hover:text-[var(--color-brass)]">
                 {siteConfig.email}
               </a>
             </li>
             <li className="flex items-center gap-3">
-              <span className="text-[var(--color-gold-400)]">Atendimento</span>
-              <span>{siteConfig.city} / {siteConfig.state} e todo o Brasil (online)</span>
+              <span className="eyebrow w-24 shrink-0">Atendimento</span>
+              <span className="text-[var(--color-ink)]">{siteConfig.city} / {siteConfig.state} e todo o Brasil (online)</span>
             </li>
           </ul>
         </div>
 
-        <form
-          onSubmit={handleSubmit}
-          className="rounded-2xl bg-white p-6 text-slate-800 shadow-xl sm:p-8"
-        >
-          <div className="grid gap-4">
+        <form onSubmit={handleSubmit} className="border border-[var(--color-line)] p-6 sm:p-8">
+          <div className="grid gap-5">
             <div>
-              <label htmlFor="name" className="text-sm font-medium text-slate-700">
-                Nome
-              </label>
-              <input
-                id="name"
-                name="name"
-                type="text"
-                required
-                className="mt-1 w-full rounded-md border border-slate-300 px-3 py-2 text-sm focus:border-[var(--color-navy-700)] focus:outline-none focus:ring-1 focus:ring-[var(--color-navy-700)]"
-              />
+              <label htmlFor="name" className="eyebrow">Nome</label>
+              <input id="name" name="name" type="text" required className={inputClasses} />
             </div>
 
             <div>
-              <label htmlFor="phone" className="text-sm font-medium text-slate-700">
-                Telefone / WhatsApp
-              </label>
-              <input
-                id="phone"
-                name="phone"
-                type="tel"
-                required
-                className="mt-1 w-full rounded-md border border-slate-300 px-3 py-2 text-sm focus:border-[var(--color-navy-700)] focus:outline-none focus:ring-1 focus:ring-[var(--color-navy-700)]"
-              />
+              <label htmlFor="phone" className="eyebrow">Telefone / WhatsApp</label>
+              <input id="phone" name="phone" type="tel" required className={inputClasses} />
             </div>
 
             <div>
-              <label htmlFor="topic" className="text-sm font-medium text-slate-700">
-                Assunto
-              </label>
-              <select
-                id="topic"
-                name="topic"
-                className="mt-1 w-full rounded-md border border-slate-300 bg-white px-3 py-2 text-sm focus:border-[var(--color-navy-700)] focus:outline-none focus:ring-1 focus:ring-[var(--color-navy-700)]"
-              >
+              <label htmlFor="topic" className="eyebrow">Assunto</label>
+              <select id="topic" name="topic" className={`${inputClasses} bg-[var(--color-paper)]`}>
                 <option>Planejamento Tributário</option>
                 <option>Defesa em Autuação Fiscal</option>
                 <option>Recuperação de Créditos</option>
@@ -110,33 +86,25 @@ export default function ContactSection() {
             </div>
 
             <div>
-              <label htmlFor="message" className="text-sm font-medium text-slate-700">
-                Mensagem
-              </label>
-              <textarea
-                id="message"
-                name="message"
-                rows={4}
-                required
-                className="mt-1 w-full rounded-md border border-slate-300 px-3 py-2 text-sm focus:border-[var(--color-navy-700)] focus:outline-none focus:ring-1 focus:ring-[var(--color-navy-700)]"
-              />
+              <label htmlFor="message" className="eyebrow">Mensagem</label>
+              <textarea id="message" name="message" rows={3} required className={inputClasses} />
             </div>
 
             <button
               type="submit"
-              className="mt-2 inline-flex items-center justify-center rounded-md bg-[#25D366] px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-[#1ebe5b]"
+              className="mt-2 inline-flex items-center justify-center bg-[var(--color-ink)] px-6 py-3 text-sm font-medium text-[var(--color-paper)] transition-colors hover:bg-[var(--color-charcoal)]"
             >
               Enviar e continuar no WhatsApp
             </button>
 
             {submitted && (
-              <p className="text-sm text-emerald-600">
+              <p className="text-sm text-[var(--color-ink-soft)]">
                 Se o WhatsApp não abriu automaticamente, verifique se o navegador
                 bloqueou pop-ups ou fale diretamente pelo botão flutuante.
               </p>
             )}
 
-            <p className="text-xs text-slate-500">
+            <p className="text-xs text-[var(--color-ink-faint)]">
               Ao enviar, você será redirecionado ao WhatsApp com sua mensagem
               preenchida para dar continuidade ao atendimento.
             </p>
