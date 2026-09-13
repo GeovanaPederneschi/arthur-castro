@@ -13,7 +13,6 @@ export const siteConfig = {
   tagline: "Segurança jurídica para suas questões com o Fisco",
 
   // Domínio de produção (usado em metadata, sitemap, robots, JSON-LD)
-  // TODO: trocar pelo domínio real depois de configurar na Vercel
   url: "https://arthur-castro.vercel.app",
 
   // Localização (importante para SEO local — ajuste para a cidade real)
