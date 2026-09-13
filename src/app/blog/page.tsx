@@ -6,14 +6,16 @@ import { siteConfig } from "@/lib/site-config";
 export const metadata: Metadata = {
   title: "Blog Jurídico Tributário",
   description:
-    `Artigos sobre Direito Tributário escritos por ${siteConfig.lawyerName}: malha fina, autuações fiscais, ` +
-    "planejamento tributário, parcelamento de dívidas e mais.",
+    `Artigos sobre Direito Tributário escritos por ${siteConfig.lawyerName}: ITBI, execução fiscal, isenção de Imposto de Renda, ` +
+    "Reforma Tributária, malha fina e mais.",
   alternates: {
     canonical: "/blog",
   },
 };
 
 export default function BlogIndexPage() {
+  const sorted = [...posts].sort((a, b) => b.date.localeCompare(a.date));
+
   return (
     <section className="mx-auto max-w-3xl px-4 py-20 sm:px-6 sm:py-28">
       <p className="eyebrow">Blog</p>
@@ -27,7 +29,7 @@ export default function BlogIndexPage() {
       </p>
 
       <div className="mt-14 divide-y divide-[var(--color-line)] border-t border-[var(--color-line)]">
-        {posts.map((post) => (
+        {sorted.map((post) => (
           <Link key={post.slug} href={`/blog/${post.slug}`} className="group block py-8">
             <div className="flex flex-wrap items-center gap-3 text-xs text-[var(--color-ink-faint)]">
               <span className="eyebrow">{post.category}</span>

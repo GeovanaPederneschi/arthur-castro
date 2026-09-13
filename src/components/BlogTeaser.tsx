@@ -2,6 +2,9 @@ import Link from "next/link";
 import { posts } from "@/lib/blog-data";
 
 export default function BlogTeaser() {
+  const featured = posts.filter((post) => post.featured);
+  const items = (featured.length > 0 ? featured : posts).slice(0, 4);
+
   return (
     <section className="bg-[var(--color-paper)] py-20 sm:py-28">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
@@ -21,7 +24,7 @@ export default function BlogTeaser() {
         </div>
 
         <div className="mt-2 divide-y divide-[var(--color-line)]">
-          {posts.map((post) => (
+          {items.map((post) => (
             <Link
               key={post.slug}
               href={`/blog/${post.slug}`}
