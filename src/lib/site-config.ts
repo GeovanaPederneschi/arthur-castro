@@ -34,6 +34,9 @@ export const siteConfig = {
   instagram: "",
   linkedin: "https://www.linkedin.com/in/joao-arthur-mendes-castro/",
 
+  // Verificação de propriedade no Google Search Console (tag HTML)
+  googleSiteVerification: "DoeDXRhYWma_cOTP10Ayzej-A0ogbCWyxvnMZik4Alo",
+
   // SEO
   keywords: [
     "advogado tributarista",
