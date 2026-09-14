@@ -53,7 +53,7 @@ export default function ItbiCalculator() {
 
       <div className="mt-6 grid gap-5 sm:grid-cols-2">
         <div>
-          <label htmlFor="purchase" className="eyebrow">
+          <label htmlFor="purchase" className="eyebrow block min-h-[2.2em]">
             Valor que você pagou pelo imóvel
           </label>
           <input
@@ -68,7 +68,7 @@ export default function ItbiCalculator() {
           />
         </div>
         <div>
-          <label htmlFor="reference" className="eyebrow">
+          <label htmlFor="reference" className="eyebrow block min-h-[2.2em]">
             Valor Venal de Referência da Prefeitura
           </label>
           <input
