@@ -1,10 +1,45 @@
+import Image from "next/image";
 import { siteConfig } from "@/lib/site-config";
 import WhatsAppButton from "./WhatsAppButton";
 
 export default function Hero() {
   return (
-    <section className="border-b border-[var(--color-line)] bg-[var(--color-paper)]">
-      <div className="mx-auto max-w-3xl px-4 py-20 text-center sm:px-6 sm:py-28">
+    <section className="relative overflow-hidden border-b border-[var(--color-line)] bg-[var(--color-paper)]">
+      {/* ilustrações de fundo (desktop): Ponte Estaiada à esquerda, Catedral da Sé à direita */}
+      <div
+        className="pointer-events-none absolute inset-y-0 left-0 hidden w-64 opacity-25 lg:block xl:w-80"
+        style={{
+          maskImage: "linear-gradient(to right, black 35%, transparent 95%)",
+          WebkitMaskImage: "linear-gradient(to right, black 35%, transparent 95%)",
+        }}
+      >
+        <Image
+          src="/images/ponte-estaiada.jpg"
+          alt=""
+          fill
+          sizes="320px"
+          className="object-cover"
+          priority
+        />
+      </div>
+      <div
+        className="pointer-events-none absolute inset-y-0 right-0 hidden w-64 opacity-25 lg:block xl:w-80"
+        style={{
+          maskImage: "linear-gradient(to left, black 35%, transparent 95%)",
+          WebkitMaskImage: "linear-gradient(to left, black 35%, transparent 95%)",
+        }}
+      >
+        <Image
+          src="/images/catedral-se.jpg"
+          alt=""
+          fill
+          sizes="320px"
+          className="object-cover"
+          priority
+        />
+      </div>
+
+      <div className="relative mx-auto max-w-3xl px-4 py-20 text-center sm:px-6 sm:py-28">
         <p className="eyebrow">Direito Tributário</p>
 
         <h1 className="mt-5 font-serif text-4xl leading-tight text-[var(--color-ink)] sm:text-5xl">
@@ -49,6 +84,28 @@ export default function Hero() {
             </dd>
           </div>
         </dl>
+
+        {/* ilustrações (celular/tablet): empilhadas abaixo do conteúdo */}
+        <div className="mt-12 grid grid-cols-2 gap-4 lg:hidden">
+          <div className="relative aspect-[3/4] overflow-hidden opacity-80">
+            <Image
+              src="/images/ponte-estaiada.jpg"
+              alt="Ponte Estaiada, São Paulo"
+              fill
+              sizes="(max-width: 640px) 45vw, 300px"
+              className="object-cover"
+            />
+          </div>
+          <div className="relative aspect-[3/4] overflow-hidden opacity-80">
+            <Image
+              src="/images/catedral-se.jpg"
+              alt="Catedral da Sé, São Paulo"
+              fill
+              sizes="(max-width: 640px) 45vw, 300px"
+              className="object-cover"
+            />
+          </div>
+        </div>
       </div>
     </section>
   );
