@@ -30,6 +30,7 @@ export const metadata: Metadata = {
   keywords: [...siteConfig.keywords],
   authors: [{ name: siteConfig.lawyerName }],
   creator: siteConfig.lawyerName,
+  applicationName: siteConfig.brand,
   alternates: {
     canonical: "/",
   },
@@ -64,6 +65,13 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
+  const websiteJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: siteConfig.brand,
+    url: siteConfig.url,
+  };
+
   const legalServiceJsonLd = {
     "@context": "https://schema.org",
     "@type": "Attorney",
@@ -99,6 +107,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${inter.variable} ${sourceSerif.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-[var(--color-paper)] text-[var(--foreground)]">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(legalServiceJsonLd) }}
