@@ -19,7 +19,7 @@ export default function BlogIndexPage() {
   return (
     <section className="mx-auto max-w-3xl px-4 py-20 sm:px-6 sm:py-28">
       <p className="eyebrow">Atualizações Tributárias</p>
-      <h1 className="mt-3 font-serif text-4xl text-[var(--color-ink)] sm:text-5xl">
+      <h1 className="mt-3 font-serif text-4xl text-[var(--color-navy)] sm:text-5xl">
         Atualizações Tributárias
       </h1>
       <p className="mt-5 max-w-2xl text-[var(--color-ink-soft)] leading-relaxed">
@@ -44,7 +44,7 @@ export default function BlogIndexPage() {
               <span>·</span>
               <span>{post.readingTime}</span>
             </div>
-            <h2 className="mt-3 font-serif text-2xl text-[var(--color-ink)] group-hover:text-[var(--color-brass)]">
+            <h2 className="mt-3 font-serif text-2xl text-[var(--color-navy)] group-hover:text-[var(--color-wine)]">
               {post.title}
             </h2>
             <p className="mt-2 text-sm text-[var(--color-ink-soft)]">{post.excerpt}</p>

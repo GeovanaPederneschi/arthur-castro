@@ -41,7 +41,7 @@ export default function ItbiCalculator() {
   return (
     <div className="not-prose my-10 border border-[var(--color-line)] p-6 sm:p-8">
       <p className="eyebrow">Calculadora simples</p>
-      <h2 className="mt-2 font-serif text-xl text-[var(--color-ink)] sm:text-2xl">
+      <h2 className="mt-2 font-serif text-xl text-[var(--color-navy)] sm:text-2xl">
         Quanto você pode estar pagando de ITBI a mais
       </h2>
       <p className="mt-3 text-sm leading-relaxed text-[var(--color-ink-soft)]">
@@ -101,7 +101,7 @@ export default function ItbiCalculator() {
             </div>
             <div>
               <dt className="eyebrow">Possível diferença cobrada a mais</dt>
-              <dd className={`mt-1 font-serif text-lg ${hasDifference ? "text-[var(--color-brass)]" : "text-[var(--color-ink)]"}`}>
+              <dd className={`mt-1 font-serif text-lg ${hasDifference ? "text-[var(--color-wine)]" : "text-[var(--color-ink)]"}`}>
                 {formatCurrency(diferenca)}
               </dd>
             </div>

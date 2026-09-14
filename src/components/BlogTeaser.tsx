@@ -11,7 +11,7 @@ export default function BlogTeaser() {
         <div className="flex flex-wrap items-end justify-between gap-4 border-b border-[var(--color-line)] pb-8">
           <div className="max-w-2xl">
             <p className="eyebrow">Atualizações Tributárias</p>
-            <h2 className="mt-3 font-serif text-3xl text-[var(--color-ink)] sm:text-4xl">
+            <h2 className="mt-3 font-serif text-3xl text-[var(--color-navy)] sm:text-4xl">
               Conteúdo sobre Direito Tributário
             </h2>
           </div>
@@ -32,7 +32,7 @@ export default function BlogTeaser() {
             >
               <div>
                 <p className="eyebrow">{post.category}</p>
-                <h3 className="mt-2 font-serif text-xl text-[var(--color-ink)] group-hover:text-[var(--color-brass)]">
+                <h3 className="mt-2 font-serif text-xl text-[var(--color-navy)] group-hover:text-[var(--color-wine)]">
                   {post.title}
                 </h3>
                 <p className="mt-2 max-w-2xl text-sm text-[var(--color-ink-soft)]">{post.excerpt}</p>

@@ -27,7 +27,7 @@ export default function Process() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="max-w-2xl">
           <p className="eyebrow">Como funciona</p>
-          <h2 className="mt-3 font-serif text-3xl text-[var(--color-ink)] sm:text-4xl">
+          <h2 className="mt-3 font-serif text-3xl text-[var(--color-navy)] sm:text-4xl">
             Um processo simples, do primeiro contato à solução
           </h2>
         </div>
@@ -35,10 +35,10 @@ export default function Process() {
         <div className="mt-14 grid gap-10 border-t border-[var(--color-line)] pt-10 sm:grid-cols-2 lg:grid-cols-4">
           {steps.map((step) => (
             <div key={step.number}>
-              <span className="font-serif text-3xl text-[var(--color-brass)]">
+              <span className="font-serif text-3xl text-[var(--color-wine)]">
                 {step.number}
               </span>
-              <h3 className="mt-3 font-serif text-lg text-[var(--color-ink)]">
+              <h3 className="mt-3 font-serif text-lg text-[var(--color-navy)]">
                 {step.title}
               </h3>
               <p className="mt-2 text-sm text-[var(--color-ink-soft)]">{step.description}</p>

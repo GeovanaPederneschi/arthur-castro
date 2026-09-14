@@ -10,7 +10,7 @@ export default function ArticleCTA({
 }) {
   return (
     <div className="not-prose my-10 border border-[var(--color-line)] bg-[var(--color-paper-tint)] p-6">
-      <p className="font-serif text-lg text-[var(--color-ink)]">{text}</p>
+      <p className="font-serif text-lg text-[var(--color-navy)]">{text}</p>
       <div className="mt-4 flex flex-col gap-3 sm:flex-row">
         <WhatsAppButton message={whatsappMessage} label="Falar no WhatsApp agora" />
         <Link

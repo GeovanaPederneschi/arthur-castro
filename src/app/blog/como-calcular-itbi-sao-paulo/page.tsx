@@ -60,7 +60,7 @@ export default function BlogPostPage() {
 
       <header className="mt-6 border-b border-[var(--color-line)] pb-8">
         <p className="eyebrow">{post.category}</p>
-        <h1 className="mt-3 font-serif text-3xl leading-tight text-[var(--color-ink)] sm:text-4xl">
+        <h1 className="mt-3 font-serif text-3xl leading-tight text-[var(--color-navy)] sm:text-4xl">
           {post.title}
         </h1>
         <div className="mt-4 flex flex-wrap items-center gap-3 text-sm text-[var(--color-ink-faint)]">
@@ -148,7 +148,7 @@ export default function BlogPostPage() {
           podem alterar significativamente o cálculo e a estratégia
           recomendada.
         </p>
-        <Link href="/blog" className="mt-4 inline-block text-[var(--color-ink)] hover:text-[var(--color-brass)] hover:underline">
+        <Link href="/blog" className="mt-4 inline-block text-[var(--color-ink)] hover:text-[var(--color-wine)] hover:underline">
           ← Voltar para Atualizações Tributárias
         </Link>
       </footer>

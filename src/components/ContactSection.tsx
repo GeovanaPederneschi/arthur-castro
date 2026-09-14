@@ -32,7 +32,7 @@ export default function ContactSection() {
       <div className="mx-auto grid max-w-6xl gap-12 px-4 sm:px-6 md:grid-cols-2 md:gap-20">
         <div>
           <p className="eyebrow">Fale comigo</p>
-          <h2 className="mt-3 font-serif text-3xl text-[var(--color-ink)] sm:text-4xl">
+          <h2 className="mt-3 font-serif text-3xl text-[var(--color-navy)] sm:text-4xl">
             Vamos conversar sobre o seu caso
           </h2>
           <p className="mt-5 text-[var(--color-ink-soft)] leading-relaxed">
@@ -44,13 +44,13 @@ export default function ContactSection() {
           <ul className="mt-10 space-y-4 border-t border-[var(--color-line)] pt-6 text-sm">
             <li className="flex items-center gap-3">
               <span className="eyebrow w-24 shrink-0">Telefone</span>
-              <a href={`tel:${siteConfig.phoneE164}`} className="text-[var(--color-ink)] hover:text-[var(--color-brass)]">
+              <a href={`tel:${siteConfig.phoneE164}`} className="text-[var(--color-ink)] hover:text-[var(--color-wine)]">
                 {siteConfig.phoneDisplay}
               </a>
             </li>
             <li className="flex items-center gap-3">
               <span className="eyebrow w-24 shrink-0">E-mail</span>
-              <a href={`mailto:${siteConfig.email}`} className="text-[var(--color-ink)] hover:text-[var(--color-brass)]">
+              <a href={`mailto:${siteConfig.email}`} className="text-[var(--color-ink)] hover:text-[var(--color-wine)]">
                 {siteConfig.email}
               </a>
             </li>

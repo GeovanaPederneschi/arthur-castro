@@ -45,11 +45,11 @@ export default function Hero() {
       <div className="relative mx-auto max-w-3xl px-4 py-20 text-center sm:px-6 sm:py-28">
         <p className="eyebrow">Direito Tributário</p>
 
-        <h1 className="mt-5 font-serif text-4xl leading-tight text-[var(--color-ink)] sm:text-5xl">
+        <h1 className="mt-5 font-serif text-4xl leading-tight text-[var(--color-navy)] sm:text-5xl">
           Advocacia Tributária
         </h1>
 
-        <div className="mx-auto mt-6 h-px w-16 bg-[var(--color-brass)]" />
+        <div className="mx-auto mt-6 h-px w-16 bg-[var(--color-wine)]" />
 
         <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-[var(--color-ink-soft)]">
           Se você recebeu uma notificação da Receita Federal, está com dívidas

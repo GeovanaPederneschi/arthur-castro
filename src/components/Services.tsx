@@ -37,7 +37,7 @@ export default function Services() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="max-w-2xl">
           <p className="eyebrow">Áreas de Atuação</p>
-          <h2 className="mt-3 font-serif text-3xl text-[var(--color-ink)] sm:text-4xl">
+          <h2 className="mt-3 font-serif text-3xl text-[var(--color-navy)] sm:text-4xl">
             Soluções jurídicas para as principais questões tributárias
           </h2>
           <p className="mt-4 text-[var(--color-ink-soft)]">
@@ -52,11 +52,11 @@ export default function Services() {
               key={service.title}
               className="grid gap-2 py-8 sm:grid-cols-[80px_1fr] sm:gap-8"
             >
-              <span className="font-serif text-2xl text-[var(--color-brass)]">
+              <span className="font-serif text-2xl text-[var(--color-wine)]">
                 {service.number}
               </span>
               <div>
-                <h3 className="font-serif text-lg text-[var(--color-ink)]">
+                <h3 className="font-serif text-lg text-[var(--color-navy)]">
                   {service.title}
                 </h3>
                 <p className="mt-2 max-w-2xl text-sm leading-relaxed text-[var(--color-ink-soft)]">

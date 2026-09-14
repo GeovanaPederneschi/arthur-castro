@@ -7,6 +7,7 @@ import WhatsAppButton from "./WhatsAppButton";
 
 const navLinks = [
   { href: "/#servicos", label: "Serviços" },
+  { href: "/impostos", label: "Impostos" },
   { href: "/#sobre", label: "Sobre" },
   { href: "/#faq", label: "Dúvidas" },
   { href: "/blog", label: "Atualizações" },
@@ -20,7 +21,7 @@ export default function Header() {
     <header className="sticky top-0 z-40 border-b border-[var(--color-line)] bg-[var(--color-paper)]/95 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6">
         <Link href="/" className="flex flex-col leading-tight">
-          <span className="font-serif text-lg tracking-wide text-[var(--color-ink)] sm:text-xl">
+          <span className="font-serif text-lg tracking-wide text-[var(--color-navy)] sm:text-xl">
             {siteConfig.lawyerName}
           </span>
           <span className="eyebrow mt-0.5">Advocacia Tributária</span>

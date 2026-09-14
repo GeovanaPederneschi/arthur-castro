@@ -50,7 +50,7 @@ export default function FAQ() {
       <div className="mx-auto max-w-3xl px-4 sm:px-6">
         <div className="max-w-2xl">
           <p className="eyebrow">Dúvidas Frequentes</p>
-          <h2 className="mt-3 font-serif text-3xl text-[var(--color-ink)] sm:text-4xl">
+          <h2 className="mt-3 font-serif text-3xl text-[var(--color-navy)] sm:text-4xl">
             Perguntas comuns sobre Direito Tributário
           </h2>
         </div>
@@ -58,9 +58,9 @@ export default function FAQ() {
         <div className="mt-10 divide-y divide-[var(--color-line)] border-y border-[var(--color-line)]">
           {faqs.map((faq) => (
             <details key={faq.question} className="group py-5">
-              <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-serif text-base text-[var(--color-ink)]">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-serif text-base text-[var(--color-navy)]">
                 {faq.question}
-                <span className="shrink-0 font-sans text-lg text-[var(--color-brass)] transition-transform group-open:rotate-45">
+                <span className="shrink-0 font-sans text-lg text-[var(--color-wine)] transition-transform group-open:rotate-45">
                   +
                 </span>
               </summary>

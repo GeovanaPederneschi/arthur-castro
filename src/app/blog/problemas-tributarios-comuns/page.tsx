@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 function CTA({ text }: { text: string }) {
   return (
     <div className="not-prose my-10 border border-[var(--color-line)] bg-[var(--color-paper-tint)] p-6">
-      <p className="font-serif text-lg text-[var(--color-ink)]">
+      <p className="font-serif text-lg text-[var(--color-navy)]">
         {text}
       </p>
       <div className="mt-4 flex flex-col gap-3 sm:flex-row">
@@ -100,7 +100,7 @@ export default function BlogPostPage() {
         <p className="eyebrow">
           {post.category}
         </p>
-        <h1 className="mt-3 font-serif text-3xl leading-tight text-[var(--color-ink)] sm:text-4xl">
+        <h1 className="mt-3 font-serif text-3xl leading-tight text-[var(--color-navy)] sm:text-4xl">
           {post.title}
         </h1>
         <div className="mt-4 flex flex-wrap items-center gap-3 text-sm text-[var(--color-ink-faint)]">
@@ -275,7 +275,7 @@ export default function BlogPostPage() {
           particularidades que podem alterar significativamente a estratégia
           recomendada.
         </p>
-        <Link href="/blog" className="mt-4 inline-block text-[var(--color-ink)] hover:text-[var(--color-brass)] hover:underline">
+        <Link href="/blog" className="mt-4 inline-block text-[var(--color-ink)] hover:text-[var(--color-wine)] hover:underline">
           ← Voltar para Atualizações Tributárias
         </Link>
       </footer>

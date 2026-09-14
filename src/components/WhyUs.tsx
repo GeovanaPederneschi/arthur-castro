@@ -40,7 +40,7 @@ export default function WhyUs() {
                 priority
               />
             </div>
-            <p className="mt-4 font-serif text-lg text-[var(--color-ink)]">
+            <p className="mt-4 font-serif text-lg text-[var(--color-navy)]">
               {siteConfig.fullLegalName}
             </p>
             <p className="text-sm text-[var(--color-ink-faint)]">{siteConfig.oab}</p>
@@ -48,7 +48,7 @@ export default function WhyUs() {
 
           <div>
             <p className="eyebrow">Sobre o escritório</p>
-            <h2 className="mt-3 font-serif text-3xl text-[var(--color-ink)] sm:text-4xl">
+            <h2 className="mt-3 font-serif text-3xl text-[var(--color-navy)] sm:text-4xl">
               {siteConfig.fullLegalName}
             </h2>
             <p className="mt-5 text-[var(--color-ink-soft)] leading-relaxed">
@@ -66,7 +66,7 @@ export default function WhyUs() {
             <div className="mt-10 grid gap-x-8 gap-y-5 border-t border-[var(--color-line)] pt-8 sm:grid-cols-2">
               {points.map((point) => (
                 <div key={point.title}>
-                  <h3 className="font-serif text-base text-[var(--color-ink)]">
+                  <h3 className="font-serif text-base text-[var(--color-navy)]">
                     {point.title}
                   </h3>
                   <p className="mt-1.5 text-sm text-[var(--color-ink-soft)]">{point.description}</p>

@@ -17,7 +17,7 @@ export default function RelatedArticles({
       <div className="mt-4 space-y-4">
         {items.map((post) => (
           <Link key={post.slug} href={`/blog/${post.slug}`} className="group block">
-            <p className="font-serif text-lg text-[var(--color-ink)] group-hover:text-[var(--color-brass)]">
+            <p className="font-serif text-lg text-[var(--color-navy)] group-hover:text-[var(--color-wine)]">
               {post.title}
             </p>
             <p className="mt-1 text-sm text-[var(--color-ink-soft)]">{post.excerpt}</p>

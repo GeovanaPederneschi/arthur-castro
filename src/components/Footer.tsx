@@ -11,7 +11,7 @@ export default function Footer() {
           <p className="font-serif text-lg text-[var(--color-paper)]">
             {siteConfig.lawyerName}
           </p>
-          <p className="mt-1 text-xs uppercase tracking-wide text-[var(--color-brass-soft)]">{siteConfig.oab}</p>
+          <p className="mt-1 text-xs uppercase tracking-wide text-[var(--color-wine-soft)]">{siteConfig.oab}</p>
           <p className="mt-4 max-w-xs text-sm leading-relaxed">
             Advocacia especializada em Direito Tributário, com atuação consultiva e
             contenciosa para pessoas físicas e empresas.
@@ -24,6 +24,7 @@ export default function Footer() {
           </p>
           <ul className="mt-4 space-y-2 text-sm">
             <li><Link href="/#servicos" className="hover:text-[var(--color-paper)]">Serviços</Link></li>
+            <li><Link href="/impostos" className="hover:text-[var(--color-paper)]">Impostos</Link></li>
             <li><Link href="/#sobre" className="hover:text-[var(--color-paper)]">Sobre</Link></li>
             <li><Link href="/#faq" className="hover:text-[var(--color-paper)]">Dúvidas Frequentes</Link></li>
             <li><Link href="/blog" className="hover:text-[var(--color-paper)]">Atualizações Tributárias</Link></li>

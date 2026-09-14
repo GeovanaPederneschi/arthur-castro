@@ -4,7 +4,7 @@
   --background: #ede3cf;
   --foreground: #1c1b19;
 
-  /* Paleta clássica e minimalista: bege + tinta + um único acento em bronze */
+  /* Paleta clássica: bege + tinta + títulos em azul-marinho + acento em vinho */
   --color-paper: #ede3cf;
   --color-paper-tint: #e0d3b6;
   --color-ink: #1c1b19;
@@ -12,8 +12,9 @@
   --color-ink-faint: #7d735c;
   --color-line: #cbba93;
   --color-charcoal: #23201a;
-  --color-brass: #8a6a34;
-  --color-brass-soft: #b79a5c;
+  --color-navy: #16233f;
+  --color-wine: #6d2532;
+  --color-wine-soft: #8f4a56;
 }
 
 @theme inline {
@@ -29,8 +30,9 @@
   --color-ink-faint: var(--color-ink-faint);
   --color-line: var(--color-line);
   --color-charcoal: var(--color-charcoal);
-  --color-brass: var(--color-brass);
-  --color-brass-soft: var(--color-brass-soft);
+  --color-navy: var(--color-navy);
+  --color-wine: var(--color-wine);
+  --color-wine-soft: var(--color-wine-soft);
 }
 
 body {
@@ -45,7 +47,7 @@ html {
 
 .prose-article h2 {
   font-family: var(--font-source-serif), Georgia, serif;
-  color: var(--color-ink);
+  color: var(--color-navy);
 }
 
 .eyebrow {
@@ -53,5 +55,5 @@ html {
   font-weight: 600;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--color-brass);
+  color: var(--color-wine);
 }
