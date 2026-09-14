@@ -85,25 +85,21 @@ export default function Hero() {
           </div>
         </dl>
 
-        {/* ilustrações (celular/tablet): empilhadas abaixo do conteúdo */}
-        <div className="mt-12 grid grid-cols-2 gap-4 lg:hidden">
-          <div className="relative aspect-[3/4] overflow-hidden opacity-80">
-            <Image
-              src="/images/ponte-estaiada.jpg"
-              alt="Ponte Estaiada, São Paulo"
-              fill
-              sizes="(max-width: 640px) 45vw, 300px"
-              className="object-cover"
-            />
-          </div>
-          <div className="relative aspect-[3/4] overflow-hidden opacity-80">
-            <Image
-              src="/images/catedral-se.jpg"
-              alt="Catedral da Sé, São Paulo"
-              fill
-              sizes="(max-width: 640px) 45vw, 300px"
-              className="object-cover"
-            />
+        {/* OPÇÃO 2: faixa única full-width com degradê no topo/base (celular/tablet) */}
+        <div className="relative -mx-4 mt-12 h-40 overflow-hidden sm:-mx-6 sm:h-48 lg:hidden">
+          <div
+            className="absolute inset-0 flex opacity-60"
+            style={{
+              maskImage: "linear-gradient(to bottom, transparent, black 25%, black 75%, transparent)",
+              WebkitMaskImage: "linear-gradient(to bottom, transparent, black 25%, black 75%, transparent)",
+            }}
+          >
+            <div className="relative w-1/2">
+              <Image src="/images/ponte-estaiada.jpg" alt="" fill sizes="50vw" className="object-cover" />
+            </div>
+            <div className="relative w-1/2">
+              <Image src="/images/catedral-se.jpg" alt="" fill sizes="50vw" className="object-cover" />
+            </div>
           </div>
         </div>
       </div>
