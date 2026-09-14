@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Hero from "@/components/Hero";
 import Services from "@/components/Services";
+import LandmarkBand from "@/components/LandmarkBand";
 import WhyUs from "@/components/WhyUs";
 import Process from "@/components/Process";
 import FAQ from "@/components/FAQ";
@@ -23,6 +24,12 @@ export default function Home() {
     <>
       <Hero />
       <Services />
+      <LandmarkBand
+        src="/images/catedral-se.jpg"
+        alt="Catedral da Sé, São Paulo"
+        width={700}
+        height={933}
+      />
       <WhyUs />
       <Process />
       <FAQ />

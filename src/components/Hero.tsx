@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { siteConfig } from "@/lib/site-config";
 import WhatsAppButton from "./WhatsAppButton";
+import LandmarkBand from "./LandmarkBand";
 
 export default function Hero() {
   return (
@@ -84,25 +85,14 @@ export default function Hero() {
             </dd>
           </div>
         </dl>
-
-        {/* OPÇÃO 2: faixa única full-width com degradê no topo/base (celular/tablet) */}
-        <div className="relative -mx-4 mt-12 h-40 overflow-hidden sm:-mx-6 sm:h-48 lg:hidden">
-          <div
-            className="absolute inset-0 flex opacity-60"
-            style={{
-              maskImage: "linear-gradient(to bottom, transparent, black 25%, black 75%, transparent)",
-              WebkitMaskImage: "linear-gradient(to bottom, transparent, black 25%, black 75%, transparent)",
-            }}
-          >
-            <div className="relative w-1/2">
-              <Image src="/images/ponte-estaiada.jpg" alt="" fill sizes="50vw" className="object-cover" />
-            </div>
-            <div className="relative w-1/2">
-              <Image src="/images/catedral-se.jpg" alt="" fill sizes="50vw" className="object-cover" />
-            </div>
-          </div>
-        </div>
       </div>
+
+      <LandmarkBand
+        src="/images/ponte-estaiada.jpg"
+        alt="Ponte Estaiada, São Paulo"
+        width={700}
+        height={1050}
+      />
     </section>
   );
 }
