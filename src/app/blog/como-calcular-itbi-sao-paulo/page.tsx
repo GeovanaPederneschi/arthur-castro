@@ -5,6 +5,7 @@ import { siteConfig } from "@/lib/site-config";
 import ArticleCTA from "@/components/ArticleCTA";
 import VideoSlot from "@/components/VideoSlot";
 import RelatedArticles from "@/components/RelatedArticles";
+import ItbiCalculator from "@/components/ItbiCalculator";
 
 const post = getPostBySlug("como-calcular-itbi-sao-paulo")!;
 
@@ -127,6 +128,8 @@ export default function BlogPostPage() {
           quitando a guia sem questionar — mesmo quando existe uma
           divergência relevante entre os dois valores.
         </p>
+
+        <ItbiCalculator />
 
         <ArticleCTA
           text="Está com dúvidas sobre o valor cobrado no seu ITBI? Posso te ajudar a entender se a conta está correta."
