@@ -1,18 +1,15 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import Image from "next/image";
+import type { StaticImageData } from "next/image";
+import RevealImage from "./RevealImage";
 
 export default function LandmarkBand({
   src,
   alt,
-  width,
-  height,
 }: {
-  src: string;
+  src: StaticImageData;
   alt: string;
-  width: number;
-  height: number;
 }) {
   const containerRef = useRef<HTMLDivElement>(null);
   const imageWrapRef = useRef<HTMLDivElement>(null);
@@ -30,7 +27,7 @@ export default function LandmarkBand({
 
       const rect = container.getBoundingClientRect();
       const windowHeight = rect.height;
-      const fullHeight = (container.offsetWidth * height) / width;
+      const fullHeight = (container.offsetWidth * src.height) / src.width;
       const maxOffset = Math.max(fullHeight - windowHeight, 0);
 
       const viewportHeight = window.innerHeight;
@@ -55,7 +52,7 @@ export default function LandmarkBand({
       window.removeEventListener("scroll", onScroll);
       window.removeEventListener("resize", onScroll);
     };
-  }, [width, height]);
+  }, [src.width, src.height]);
 
   return (
     <div
@@ -67,11 +64,9 @@ export default function LandmarkBand({
       }}
     >
       <div ref={imageWrapRef} className="absolute inset-x-0 top-0 will-change-transform">
-        <Image
+        <RevealImage
           src={src}
           alt={alt}
-          width={width}
-          height={height}
           sizes="100vw"
           className="h-auto w-full"
         />

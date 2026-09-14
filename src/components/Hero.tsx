@@ -1,7 +1,9 @@
-import Image from "next/image";
 import { siteConfig } from "@/lib/site-config";
 import WhatsAppButton from "./WhatsAppButton";
 import LandmarkBand from "./LandmarkBand";
+import RevealImage from "./RevealImage";
+import ponteEstaiada from "../../public/images/ponte-estaiada.jpg";
+import catedralSe from "../../public/images/catedral-se.jpg";
 
 export default function Hero() {
   return (
@@ -14,8 +16,8 @@ export default function Hero() {
           WebkitMaskImage: "linear-gradient(to right, black 35%, transparent 95%)",
         }}
       >
-        <Image
-          src="/images/ponte-estaiada.jpg"
+        <RevealImage
+          src={ponteEstaiada}
           alt=""
           fill
           sizes="320px"
@@ -30,8 +32,8 @@ export default function Hero() {
           WebkitMaskImage: "linear-gradient(to left, black 35%, transparent 95%)",
         }}
       >
-        <Image
-          src="/images/catedral-se.jpg"
+        <RevealImage
+          src={catedralSe}
           alt=""
           fill
           sizes="320px"
@@ -87,12 +89,7 @@ export default function Hero() {
         </dl>
       </div>
 
-      <LandmarkBand
-        src="/images/ponte-estaiada.jpg"
-        alt="Ponte Estaiada, São Paulo"
-        width={700}
-        height={1050}
-      />
+      <LandmarkBand src={ponteEstaiada} alt="Ponte Estaiada, São Paulo" />
     </section>
   );
 }

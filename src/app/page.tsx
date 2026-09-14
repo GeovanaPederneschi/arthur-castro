@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import Services from "@/components/Services";
 import LandmarkBand from "@/components/LandmarkBand";
 import WhyUs from "@/components/WhyUs";
+import catedralSe from "../../public/images/catedral-se.jpg";
 import Process from "@/components/Process";
 import FAQ from "@/components/FAQ";
 import BlogTeaser from "@/components/BlogTeaser";
@@ -24,12 +25,7 @@ export default function Home() {
     <>
       <Hero />
       <Services />
-      <LandmarkBand
-        src="/images/catedral-se.jpg"
-        alt="Catedral da Sé, São Paulo"
-        width={700}
-        height={933}
-      />
+      <LandmarkBand src={catedralSe} alt="Catedral da Sé, São Paulo" />
       <WhyUs />
       <Process />
       <FAQ />
